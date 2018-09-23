@@ -1,0 +1,12 @@
+Short Notes:
+
+map(aFunction, aSequence) 
+>>> items = [1, 2, 3, 4, 5]
+>>> 
+>>> def sqr(x): return x ** 2
+
+>>> list(map(sqr, items))
+[1, 4, 9, 16, 25]
+>>> 
+----------------------------------------------
+
