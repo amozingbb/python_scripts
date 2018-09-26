@@ -1,0 +1,21 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+from decimal import *
+
+    
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+    
+    value_more = Decimal(len([x for x in arr if x > 0]))/Decimal(n)
+    value_less = Decimal(len([x for x in arr if x < 0]))/Decimal(n)
+    value_same = Decimal(len([x for x in arr if x == 0]))/Decimal(n)
+    print(format(value_more, '.6f'));
+    print(format(value_less, '.6f'));
+    print(format(value_same, '.6f'));
